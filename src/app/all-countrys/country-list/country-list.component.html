@@ -1,0 +1,8 @@
+<div class="input-container">
+    <input type="text" placeholder="Search Here" [(ngModel)]="term">
+</div>
+<div class="country-container">
+    <div *ngFor="let transfer of countrys | filter:term" class="coutry" [routerLink]="['/'+transfer.alpha2code]">
+        <span>{{transfer.name}}</span>
+    </div>
+</div>

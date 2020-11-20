@@ -1,0 +1,8 @@
+<div class="container">
+    <div id="chartdiv" class="usa-map" ></div>
+    <a class="link-countries" [routerLink]="['/all-coutry-covid-map']">
+       
+        Data for all countries
+      </a>
+      <div *ngFor="let transfer of usaCovidData"></div>
+</div>

@@ -1,0 +1,10 @@
+<div class="header" *ngIf="country">
+  <h2 >{{ country.country }}</h2>
+  <ul>
+      <li>Last Update: {{country.lastUpdate | date}}</li>
+      <li>Confirmed: {{country.confirmed }}</li>
+  </ul>
+</div>
+<div class="container-chart">
+    <div id="chartdiv" class="chart"></div>
+  </div>
